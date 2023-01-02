@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1d5ffbb-c158-443a-9b7b-36c565a76e4d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/firstApp/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firstApp/templates/analyze.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstApp/firstApp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/firstApp/firstApp/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firstApp/firstApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/firstApp/firstApp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/firstApp/firstApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/firstApp/firstApp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firstApp/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/firstApp/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,13 +35,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
