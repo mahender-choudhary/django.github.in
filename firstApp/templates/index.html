@@ -1,16 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>TextUtils</title>
-</head>
-<body>
-<h1>Welcome to the text Analyzer, Enter your text below</h1>
-<form action="/analyze" method="get">
-<textarea name="text" style="width: 1194px; height: 106px;"></textarea> <br>
-    <input type="checkbox" name="removepunc" id=""> Remove punctuation <br>
-<button type="submit">Analyze Text</button>
-</form>
-
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mahendra Text Utils</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+   <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">mahendraTextUtils.in</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Contact Us</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+   <div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Welcome to Text Utils - </strong> You can do anything with your text here.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+   <div class = 'container'>
+     <form action="/analyze" method="post"> {% csrf_token %}
+     <div class="form-floating">
+  <textarea class="form-control" name="text" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 150px"></textarea>
+  <label for="floatingTextarea2">Enter Your Text Here......</label>
+</div><br>
+       <div class="form-check form-switch">
+  <input class="form-check-input" name="removepunc" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+  <label class="form-check-label" for="flexSwitchCheckDefault">Remove punctuation </label>
+</div>
+       <div class="form-check form-switch">
+  <input class="form-check-input" name="fullcaps" type="checkbox" role="switch" id="flexSwitchCheckDefault1">
+  <label class="form-check-label" for="flexSwitchCheckDefault1">UPPERCASE</label>
+</div>
+       <div class="form-check form-switch">
+  <input class="form-check-input" name="newlineremove" type="checkbox" role="switch" id="flexSwitchCheckDefault2">
+  <label class="form-check-label" for="flexSwitchCheckDefault2">Remove New Line</label>
+</div>
+     <div class="form-check form-switch">
+  <input class="form-check-input" name="extraspaceremover" type="checkbox" role="switch" id="flexSwitchCheckDefault3">
+  <label class="form-check-label" for="flexSwitchCheckDefault3">Remove Extra Space</label>
+</div><br>
+     <button type="submit" class="btn btn-primary">Analyze Text</button>
+     </form>
+   </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
 </html>
